@@ -1,23 +1,31 @@
 # CV Builder
 
-Starter Next.js + Tailwind CV Builder app.
+A polished Next.js + Tailwind CSS experience for showcasing CV templates, building resumes with AI assisted tooling, and highlighting the team behind the product.
 
-Features included in this scaffold:
-- Home page (templates)
-- CV Builder editor: change font family/size/weight, upload avatar, AI image generator tab, AI-assisted cover letter tab
-- Save CV JSON to MongoDB
-- Download CV as PDF
-- Team page with team member listing and "insert template" example
+## Features
 
-Required environment variables:
-- MONGODB_URI - MongoDB connection string
-- OPENAI_API_KEY - (optional) for AI image / cover generation
+- **Home page** with hero, template gallery, and product highlights.
+- **Interactive CV builder** with live preview, theme controls (color, font family/size/style/weight), editable sections (contact, skills, languages, interests, experience, education, custom sections), avatar upload, AI portrait generator tab, AI assistant cover letter chat, save-to-MongoDB action, and PDF export / print controls.
+- **Team page** presenting the core crew with quick actions to insert a template or download a team profile.
+- **API routes** for persisting CVs to MongoDB and returning stubbed AI responses for portraits and cover letter assistance.
 
-Install & run:
-1. npm install
-2. Create .env.local with MONGODB_URI and OPENAI_API_KEY (optional)
-3. npm run dev
+## Getting started
 
-Notes:
-- The AI endpoints are stubs that call OpenAI if OPENAI_API_KEY is provided. Do not commit secrets.
-- Adjust styling and templates to match your design; this is a functional skeleton.
+1. Install dependencies: `npm install`
+2. Create `.env.local` with the following variables:
+   ```bash
+   MONGODB_URI="mongodb+srv://..."
+   OPENAI_API_KEY="sk-..." # optional, the AI routes return stubbed data without a key
+   ```
+3. Run the development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) to explore the experience.
+
+> **Note:** The AI routes are implemented as local stubs. Wire them to your preferred AI provider for production use. Ensure you never commit API secrets.
+
+## Tech stack
+
+- Next.js App Router (TypeScript)
+- Tailwind CSS for styling
+- MongoDB Node.js Driver for persistence
+- html2canvas + jsPDF for PDF export
+- React Query & Next Themes providers for client-side enhancements

@@ -1,0 +1,45 @@
+{
+  "name": "cvbuilder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CV Builder platform with home, team, and CV editing features.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
+    "@tanstack/react-query": "^4.36.1",
+    "autoprefixer": "^10.4.16",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "html2canvas": "^1.4.1",
+    "jsPDF": "^2.5.1",
+    "lucide-react": "^0.344.0",
+    "mongodb": "^5.8.0",
+    "next": "13.5.6",
+    "next-themes": "^0.2.1",
+    "postcss": "^8.4.31",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.48.2",
+    "react-icons": "^4.12.0",
+    "swr": "^2.2.5",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss": "^3.3.5",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/html2canvas": "^1.0.0",
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "^18.2.10",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "^13.5.6",
+    "typescript": "^5.2.2"
+  },
+  "type": "module"
+}
